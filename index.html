@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- start head-->
+        <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>E.Barakat</title>
+        <!-- flickity slider-->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- css file includes (bootstrap, all libs)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+       
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- icon (ionicons)-->
+        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+        <!-- favicon-->
+        <link rel="icon" href="./imgs/profile.png">
+        <!-- aos library-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+        <!-- chat --><script src="https://apps.elfsight.com/p/platform.js" defer=""></script>
+        <!-- ==== end head-->
+      <style type="text/css">div.eapps-widget{position:relative}div.eapps-widget.eapps-widget-show-toolbar:before{position:absolute;content:"";display:block;bottom:0;top:0;left:0;right:0;pointer-events:none;border:1px solid transparent;transition:border .3s ease;z-index:1}.eapps-widget-toolbar{position:absolute;top:-32px;left:0;right:0;display:block;z-index:99999;padding-bottom:4px;transition:all .3s ease;pointer-events:none;opacity:0}.eapps-widget:hover .eapps-widget-toolbar{opacity:1;pointer-events:auto}.eapps-widget-toolbar a{text-decoration:none;box-shadow:none!important}.eapps-widget-toolbar-panel{border-radius:6px;background-color:#222;color:#fff;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;top:0;position:relative;transition:all .3s ease;opacity:0;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;box-shadow:0 0 0 1px hsla(0,0%,100%,.2);height:28px}.eapps-widget:hover .eapps-widget-toolbar-panel{opacity:1}.eapps-widget-toolbar-panel-wrapper{width:100%;position:relative}.eapps-widget-toolbar-panel-only-you{position:absolute;top:-24px;font-size:11px;line-height:14px;color:#9c9c9c;padding:5px 4px}.eapps-widget-toolbar-panel-logo{width:28px;height:28px;border-right:1px solid hsla(0,0%,100%,.2);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.eapps-widget-toolbar-panel-logo svg{display:block;width:15px;height:15px;fill:#f93262}.eapps-widget-toolbar-panel-edit{font-size:12px;font-weight:400;line-height:14px;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;padding:9px;border-right:1px solid hsla(0,0%,100%,.2);color:#fff;text-decoration:none}.eapps-widget-toolbar-panel-edit-icon{width:14px;height:14px;margin-right:8px}.eapps-widget-toolbar-panel-edit-icon svg{display:block;width:100%;height:100%;fill:#fff}.eapps-widget-toolbar-panel-views{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-views-label{font-size:12px;font-weight:400;line-height:14px;margin-left:8px}.eapps-widget-toolbar-panel-views-bar{display:-ms-inline-flexbox;display:inline-flex;width:70px;height:3px;border-radius:2px;margin-left:8px;background-color:hsla(0,0%,100%,.3)}.eapps-widget-toolbar-panel-views-bar-inner{border-radius:2px;background-color:#4ad504}.eapps-widget-toolbar-panel-views-green .eapps-widget-toolbar-panel-views-bar-inner{background-color:#4ad504}.eapps-widget-toolbar-panel-views-red .eapps-widget-toolbar-panel-views-bar-inner{background-color:#ff4734}.eapps-widget-toolbar-panel-views-orange .eapps-widget-toolbar-panel-views-bar-inner{background-color:#ffb400}.eapps-widget-toolbar-panel-views-percent{display:-ms-inline-flexbox;display:inline-flex;margin-left:8px;margin-right:8px;font-size:12px;font-weight:400;line-height:14px}.eapps-widget-toolbar-panel-views-get-more{padding:9px 16px;background-color:#f93262;color:#fff;font-size:12px;font-weight:400;border-radius:0 6px 6px 0}.eapps-widget-toolbar-panel-share{position:absolute;top:0;display:inline-block;margin-left:8px;width:83px;height:28px;padding-bottom:4px;box-sizing:content-box!important}.eapps-widget-toolbar-panel-share:hover .eapps-widget-toolbar-panel-share-block{opacity:1;pointer-events:all}.eapps-widget-toolbar-panel-share-button{padding:0 18px;height:28px;background-color:#1c91ff;color:#fff;font-size:12px;font-weight:400;border-radius:6px;position:absolute;top:0;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;cursor:default;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-share-button svg{display:inline-block;margin-right:6px;fill:#fff;position:relative;top:-1px}.eapps-widget-toolbar-panel-share-block{position:absolute;background:#fff;border:1px solid hsla(0,0%,7%,.1);border-radius:10px;width:209px;top:32px;transform:translateX(-63px);opacity:0;pointer-events:none;transition:all .3s ease;box-shadow:0 4px 6px rgba(0,0,0,.05)}.eapps-widget-toolbar-panel-share-block:hover{opacity:1;pointer-events:all}.eapps-widget-toolbar-panel-share-block-text{color:#111;font-size:15px;font-weight:400;padding:12px 0;text-align:center}.eapps-widget-toolbar-panel-share-block-text-icon{padding-bottom:4px}.eapps-widget-toolbar-panel-share-block-actions{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;border-top:1px solid hsla(0,0%,7%,.1)}.eapps-widget-toolbar-panel-share-block-actions-item{width:33.333333%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;height:39px;transition:all .3s ease;background-color:transparent}.eapps-widget-toolbar-panel-share-block-actions-item:hover{background-color:#fafafa}.eapps-widget-toolbar-panel-share-block-actions-item a{width:100%;height:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-share-block-actions-item-icon{width:16px;height:16px;display:block}.eapps-widget-toolbar-panel-share-block-actions-item-facebook .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#3c5a9b}.eapps-widget-toolbar-panel-share-block-actions-item-twitter .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#1ab2e8}.eapps-widget-toolbar-panel-share-block-actions-item-google .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#dd4b39}.eapps-widget-toolbar-panel-share-block-actions-item:not(:last-child){border-right:1px solid hsla(0,0%,7%,.1)}</style><link href="https://apps.elfsight.com" rel="preconnect" crossorigin=""><link href="https://static.elfsight.com" rel="preconnect" crossorigin=""><link href="https://service-reviews-ultimate.elfsight.com" rel="preconnect" crossorigin=""><link href="https://storage.elfsight.com" rel="preconnect" crossorigin=""><script src="https://static.elfsight.com/apps/facebook-chat/release/cfa49381a74cd6ee239d3ac8ffbf50d1e6bfcad8/app/facebookChat.js" defer="defer" charset="UTF-8"></script><style>.eapp-facebook-chat-root-layout-component {
+      position: relative;
+      width: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    .eapp-facebook-chat-root-layout-component,
+    .eapp-facebook-chat-root-layout-component * {
+      box-sizing: border-box !important;
+      outline: none !important;
+    }
+    .eapp-facebook-chat-root-layout-component a {
+      text-decoration: none;
+    }
+    .eapp-facebook-chat-root-layout-component a:hover,
+    .eapp-facebook-chat-root-layout-component a:focus {
+      text-decoration: underline;
+    }
+    </style><style data-styled="active" data-styled-version="5.3.5"></style></head>
+    <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+        <!-- start page-->
+        <div class="page">   
+          <!-- start header-->
+          <header class="main-header d-flex align-items-center fixed-top">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+              <!-- start left-content-->
+              <div class="left-content">
+                <!-- start toggle-navbar-->
+                <button class="toggle-navbar p-0 border-0"><span class="d-block"></span><span class="d-block"></span><span class="d-block"></span></button>
+                <!-- ==== end toggle-navbar-->
+              </div>
+              <!-- ==== end left-content-->
+              <!-- start right-content-->
+              <div class="right-content d-flex align-items-center">
+                <!-- start full-screen-->
+                <button class="full-screen border-0 p-0"><ion-icon name="resize-outline" class="full-screen-icon md hydrated" role="img" aria-label="resize outline"></ion-icon></button>
+                <!-- ===== end full-screen-->
+                <!-- start mode-->
+                <div class="mode">
+                  <button class="theme-mode my-btn"><ion-icon name="moon-outline" class="icon-mode md hydrated" role="img" aria-label="moon outline"></ion-icon><span>dark</span></button>
+                </div>
+                <!-- ==== end mode-->
+              </div>
+              <!-- ===== end right-content-->
+            </div>
+          </header>
+          <!-- ===== end header-->
+          <!-- start navbar-->
+          <nav>
+            <ul class="list-unstyled m-0 p-0">
+              <li class="active" data-section="intro"><ion-icon name="home-outline" class="nav-icon md hydrated" role="img" aria-label="home outline"></ion-icon></li>
+              <li data-section="about"><ion-icon name="document-outline" class="nav-icon md hydrated" role="img" aria-label="document outline"></ion-icon></li>
+              <li data-section="skills"><ion-icon name="logo-buffer" class="nav-icon md hydrated" role="img" aria-label="logo buffer"></ion-icon></li>
+              <li data-section="portfolio"><ion-icon name="code-working-outline" class="nav-icon md hydrated" role="img" aria-label="code working outline"></ion-icon></li>
+              <li data-section="contact"><ion-icon name="call-outline" class="nav-icon md hydrated" role="img" aria-label="call outline"></ion-icon></li>
+            </ul>
+          </nav>
+          <!-- ==== end navbar-->
+          <div class="page-content">
+            <!-- the chat--><div class="elfsight-app-24b6329a-a66e-49df-ad16-326d555a77af"><div id="eapps-facebook-chat-24b6329a-a66e-49df-ad16-326d555a77af" class="RootLayout__Component-sc-1doisyz-0 eyarYd eapps-facebook-chat-24b6329a-a66e-49df-ad16-326d555a77af-custom-css-hook" data-app="eapps-facebook-chat" data-app-version="1.6.2"></div></div>
+            <!-- ==== end the chat-->
+            <!-- start intro-->
+            <section class="intro padding-sec d-flex align-items-center">
+              <!-- start dots-img--><img class="dots-img" src="./imgs/dots.png" alt="dots" style="top: 50.1667px; left: 23px;">
+              <!-- ===== end dots-img-->
+              <div class="container">
+                <div class="row d-flex justify-content-center">
+                  <!-- start intro-content-->
+                  <div class="col-md-10 col-lg-8">
+                    <div class="intro-content">
+                      <!-- start head-area-->
+                      <div class="head-area">
+                        <h4 class="iam aos-init aos-animate" data-aos="fade-right">i'm <span class="font-weight-bold">Ehab</span> Barakat</h4>
+                        <h6 class="job aos-init aos-animate" data-aos="fade-left">back end web developer</h6>
+                      </div>
+                      <!-- ==== end head-area-->
+                      <!-- start body-area-->
+                      <div class="body-area aos-init aos-animate" data-aos="fade-up">
+                        <h1 class="hi-text" style="font-size: 138.4px;"> hey!</h1>
+                      </div>
+                      <!-- ===== end body-area-->
+                      <!-- start footer-area-->
+                      <div class="footer-area">
+                        <button class="my-btn go-to-about aos-init aos-animate" data-aos="fade-right">who am i</button>
+                        <button class="my-btn go-to-portfolio aos-init aos-animate" data-aos="fade-left">my portfolio</button>
+                      </div>
+                      <!-- ==== end footer-area-->
+                    </div>
+                  </div>
+                  <!-- ==== end intro-content-->
+                </div>
+              </div>
+            </section>
+            <!-- ======== end intro-->
+            <!-- start about-->
+            <section class="about position-relative padding-sec">
+              <div class="container">
+                <!-- start content-->
+                <div class="content">
+                  <div class="row justify-content-center">
+                    <!-- start info-->
+                    <div class="col-md-10 col-lg-8">
+                      <div class="info">
+                        <h3 class="top-text text-uppercase aos-init" data-aos="fade-right">i'm <span>Ehab Barakat</span></h3>
+                        <h5 class="text aos-init" data-aos="fade-up">A back-end web developer living in Egypt, I studied at the Engineering in 2020, and I am currently working as a freelancer. And I have 25 years old and 1 years of experience. I got a certificate from Information Technology Institute ( ITI ) as full stack using PHP.</h5><a class="my-btn aos-init" href="https://api.cloudinary.com/v1_1/el-safwa/image/download?api_key=931612781999836&attachment=true&audit_context=eyJhY3Rvcl90eXBlIjoidXNlciIsImFjdG9yX2lkIjoiZmEwOTMzZGEyMDBjMDRlNmM4YzhiZDkxZTgyZmQ5MTAiLCJ1c2VyX2V4dGVybmFsX2lkIjoiNWI2ZjdjZDhkYWY4ZGU2ODhiNzk0YTE4NjJiMjFmIiwidXNlcl9jdXN0b21faWQiOiJNcmVoYWI5Nzk3QGdtYWlsLmNvbSIsImNvbXBvbmVudCI6ImNvbnNvbGUifQ%3D%3D&public_id=portofolio%2Fehab_barakat_cjbrix&signature=7011a0dbba4cab98591d65200c00f33942555638&target_filename=ehab_barakat_cjbrix.pdf&timestamp=1660913495&type=upload" target="_blank" data-aos="fade-left">Get CV</a>
+                      </div>
+                    </div>
+                    <!-- ==== end info-->
+                  </div>
+                  <div class="stats">
+                    <div class="stats-carousel flickity-enabled is-draggable" tabindex="0">
+                      
+                      
+                      
+                    <div class="flickity-viewport" style="height: 174px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translate3d(1.13%, 0px, 0px);"><div class="carousel-cell is-selected" style="position: absolute; left: 0px; transform: translateX(0%);">
+                        <div class="single-stats d-flex align-items-center first-stats">
+                          <div class="icon"><ion-icon name="checkmark-done-outline" role="img" class="md hydrated" aria-label="checkmark done outline"></ion-icon></div>
+                          <div class="info-box">
+                            <div class="num"><span class="plus">+</span> <span>8</span></div>
+                            <h5 class="stats-title">project done</h5>
+                          </div>
+                        </div>
+                      </div><div class="carousel-cell" style="position: absolute; left: 0px; transform: translateX(102.49%);" aria-hidden="true">
+                        <div class="single-stats d-flex align-items-center second-stats">
+                          <div class="icon"><ion-icon name="heart-half-outline" role="img" class="md hydrated" aria-label="heart half outline"></ion-icon></div>
+                          <div class="info-box">
+                            <div class="num"><span class="plus">+</span> <span>6</span></div>
+                            <h5 class="stats-title">truested clients</h5>
+                          </div>
+                        </div>
+                      </div><div class="carousel-cell" style="position: absolute; left: 0px; transform: translateX(-102.49%);" aria-hidden="true">
+                        <div class="single-stats d-flex align-items-center third-stats">
+                          <div class="icon"><ion-icon name="code-working-outline" role="img" class="md hydrated" aria-label="code working outline"></ion-icon></div>
+                          <div class="info-box">
+                            <div class="num"><span class="plus">+</span> <span>2</span></div>
+                            <h5 class="stats-title">experience</h5>
+                          </div>
+                        </div>
+                      </div></div></div></div>
+                  </div>
+                </div>
+                <!-- ==== end content         -->
+              </div>
+            </section>
+            <!-- ==== end about-->
+            <!-- start skills-->
+            <section class="skills padding-sec position-relative">
+              <div class="container">
+                <!-- start title-->
+                <div class="title text-capitalize">
+                  <h2 class="h1 font-weight-bold text m-0">my skills</h2>
+                </div>
+                <!-- ==== end title  -->
+                <div class="row">
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill html5 d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/html5.svg" alt="html5">
+                      <div class="box-info">  
+                        <div class="skill-title">html5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill css3 d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/css.svg" alt="css3">
+                      <div class="box-info">  
+                        <div class="skill-title">css3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill javascript d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/javascript.svg" alt="javascript">
+                      <div class="box-info">  
+                        <div class="skill-title">javascript</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill bootstrap d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/bootstrap.svg" alt="bootstrap">
+                      <div class="box-info">  
+                        <div class="skill-title">bootstrap</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill text-danger d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/angular.svg" alt="vuejs">
+                      <div class="box-info">  
+                        <div class="skill-title">Angular</div>
+                      </div>
+                    </div>
+                  </div>
+
+<!--                   
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill sass d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/sass.svg" alt="sass">
+                      <div class="box-info">  
+                        <div class="skill-title">sass</div>
+                      </div>
+                    </div>
+                  </div> -->
+
+
+                  <!-- <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill pug d-flex align-items-center position-relative"><ion-icon name="checkmark-done-outline" class="skill-icon sk-ico md hydrated" role="img" aria-label="checkmark done outline"></ion-icon>
+                      <div class="box-info">  
+                        <div class="skill-title">pug</div>
+                      </div>
+                    </div>
+                  </div> -->
+
+
+                  <!-- <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill wordpress d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/wordpress.svg" alt="wordpress">
+                      <div class="box-info">  
+                        <div class="skill-title">wordpress</div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill php d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/php.svg" alt="php">
+                      <div class="box-info">  
+                        <div class="skill-title">php</div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill mysql d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/mysql.svg" alt="mysql">
+                      <div class="box-info">  
+                        <div class="skill-title">mysql</div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill text-danger d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/laravel.svg" alt="mysql">
+                      <div class="box-info">  
+                        <div class="skill-title">laravel</div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill git d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/git.svg" alt="git">
+                      <div class="box-info">  
+                        <div class="skill-title">git</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 aos-init" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                    <div class="single-skill github d-flex align-items-center position-relative"><img class="img-fluid sk-ico" src="./imgs/skills/github.svg" alt="github">
+                      <div class="box-info">  
+                        <div class="skill-title">github</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <!-- ==== end skills-->
+            <!-- start portfolio-->
+            <section class="portfolio padding-sec position-relative">
+              <div class="container">
+                <!-- start title-->
+                <div class="title text-capitalize">
+                  <h2 class="h1 font-weight-bold text m-0">my portfolio</h2>
+                </div>
+                <!-- ==== end title  -->
+                <!-- start items-->
+                <div class="items">
+
+                    <div class="card" style="width: 32rem;">
+                        <a href="https://final-proj-front.vercel.app/home"  target="_blank" >
+                            <img src="./imgs/kittton landing.png" class="card-img-top" alt="">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Kitton Academy</h5>
+                          <p class="card-text">E-Learning for Kids</p>
+                        </div>
+                        <div class="card-body d-flex justify-content-between">
+                          <a href="https://github.com/ehab0barakat/final-proj-front" target="_blank" class="card-link">Front Code</a>
+                          <a href="https://github.com/ehab0barakat/final-project-back" target="_blank" class="card-link">Back Code</a>
+                          <a href="https://final-proj-front.vercel.app/home" target="_blank" class="card-link">Live <img src="./imgs/live.svg" width="20px" alt=""></a>
+                        </div>
+                      </div>
+
+                </div>
+                <!-- ==== end items-->
+              </div>
+            </section>
+            <!-- ==== end portfolio-->
+            <!-- start contact-->
+            <section class="contact position-relative padding-sec">
+              <!-- bg-->
+              <div class="bg">
+                 <ion-icon class="icon roc md hydrated" name="rocket-outline" role="img" aria-label="rocket outline"></ion-icon></div>
+              <!-- === end bg-->
+              <div class="container">
+                <!-- start title-->
+                <div class="title text-capitalize">
+                  <h2 class="h1 font-weight-bold text m-0">contact me</h2>
+                </div>
+                <!-- ==== end title-->
+                <!-- content-->
+                <div class="content">
+                  <div class="row">
+                    <!-- info-->
+                    <div class="col-12">
+                      <div class="info">
+                        <div class="row">
+                          <div class="col-md-12 col-lg-6">
+                            <!-- info box-->
+                            <div class="info-box aos-init" data-aos="fade-left">
+                              <div class="head-area d-flex align-items-center">
+                                <div class="icon"><ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon></div>
+                                <h4 class="text">phone</h4>
+                              </div>
+                              <div class="body-area">
+                                <h5 class="result">01066135740</h5>
+                              </div>
+                            </div>
+                            <!-- === end info box-->
+                          </div>
+                          <div class="col-md-12 col-lg-6">
+                            <!-- info box-->
+                            <div class="info-box aos-init" data-aos="fade-left">
+                              <div class="head-area d-flex align-items-center">
+                                <div class="icon"><ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon></div>
+                                <h4 class="text">email</h4>
+                              </div>
+                              <div class="body-area">
+                                <h5 class="result">mrehab9797@gmail.com</h5>
+                              </div>
+                            </div>
+                            <!-- === end info box-->
+                          </div>
+                          <div class="col-md-12 col-lg-6">
+                            <!-- info box-->
+                            <div class="info-box aos-init" data-aos="fade-left">
+                              <div class="head-area d-flex align-items-center">
+                                <div class="icon"><ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon></div>
+                                <h4 class="text">address</h4>
+                              </div>
+                              <div class="body-area">
+                                <h5 class="result">Egypt - mansoura</h5>
+                              </div>
+                            </div>
+                            <!-- === end info box-->
+                          </div>
+                          <div class="col-12">
+                            <div class="socials">
+                              <ul class="list-unstyled m-0 p-0 d-flex"> 
+                                <li><a href="https://www.facebook.com/Ehab.Barakat2020"><ion-icon class="icon md hydrated" name="logo-facebook" role="img" aria-label="logo facebook"></ion-icon></a></li>
+                                <li><a href="https://www.linkedin.com/in/ehab-barakat-356270216/"><ion-icon class="icon md hydrated" name="logo-linkedin" role="img" aria-label="logo linkedin"></ion-icon></a></li>
+                                <li><a href="mailto: mrehab9797@gmail.com"><ion-icon class="icon md hydrated" name="mail-outline" role="img" aria-label="mail outline"></ion-icon></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ==== end info-->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ==== end contact-->
+          </div>
+        </div>
+        <!-- ==== end page-->
+        <!-- start scripts-->
+        <!-- jquery-->
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <!-- bootstrap-->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <!-- fittext-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+        <!-- flickity slider-->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- axios-->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- aos library-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- main js file-->
+        <script src="./js/main-min.js"></script><script>AOS.init();</script>
+        <!-- ==== end scripts-->
+      
+    <div>
+        <div class="eapp-facebook-chat-root-layout-component eapps-facebook-chat-24b6329a-a66e-49df-ad16-326d555a77af-custom-css-hook" id="portal-24b6329a-a66e-49df-ad16-326d555a77af"><div type="floating" class="Window__Component-sc-1wwhwms-0 cRLSYG"><div type="floating" class="Window__WindowComponent-sc-1wwhwms-1 bivTZG" style="width: 360px;"><div color="rgb(29, 33, 41)" role="button" tabindex="0" class="Close__Component-sc-9nuxpx-0 bkbzsb"></div><div class="Header__Component-sc-5nh99s-0 foCopp"><div size="52" class="UserImage__Component-sc-1qu4hk4-0 kqPmEC"><div class="UserImage__ImageContainer-sc-1qu4hk4-1 jSnLdm"><div class="UserImage__Image-sc-1qu4hk4-2 RvYpb"></div></div></div><div class="Header__Info-sc-5nh99s-1 cDWrEO"><div class="Header__Name-sc-5nh99s-2 fEWHYW">Ehab Barakat</div><div class="Header__AnswerTime-sc-5nh99s-3 iquinJ">Typically replies within a day</div></div></div><div class="FacebookChat__Component-sc-ftsbah-0 gBpgvk"><div class="FacebookChat__Time-sc-ftsbah-1 jAxyAJ"><div class="FacebookChat__TimeInner-sc-ftsbah-2 kiLqmU"><div class="FacebookChat__TimeValue-sc-ftsbah-3 igteSa">14:29</div></div></div><div class="FacebookChat__MessageContainer-sc-ftsbah-4 esRotE"><div class="FacebookChat__MessageUser-sc-ftsbah-5 iilbfb"><div size="30" class="UserImage__Component-sc-1qu4hk4-0 kGSwqx"><div class="UserImage__ImageContainer-sc-1qu4hk4-1 jSnLdm"><div class="UserImage__Image-sc-1qu4hk4-2 RvYpb"></div></div></div></div><div class="FacebookDots__Component-sc-13bqxza-0 eVjFRE" style="opacity: 1;"><div class="FacebookDots__ComponentInner-sc-13bqxza-1 iYrZRr"><div class="FacebookDots__Dot-sc-13bqxza-2 FacebookDots__DotOne-sc-13bqxza-3 gAQpfm kPHmrX"></div><div class="FacebookDots__Dot-sc-13bqxza-2 FacebookDots__DotTwo-sc-13bqxza-4 gAQpfm jGkteU"></div><div class="FacebookDots__Dot-sc-13bqxza-2 FacebookDots__DotThree-sc-13bqxza-5 gAQpfm hRmMcy"></div></div></div><div class="FacebookChat__Message-sc-ftsbah-6 gExVdC" style="opacity: 0;">HEY👋<br>How can I help you?</div></div></div><a role="button" href="http://m.me/Ehab.Barakat2020" title="Facebook" class="DefaultButton__DefaultButtonComponent-sc-1v663dx-0 dnpNJl"><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="FacebookButton__Icon-sc-1ugyc6r-0 jMJozY"><path d="M12 0c-6.627 0-12 4.975-12 11.111 0 3.497 1.745 6.616 4.472 8.652v4.237l4.086-2.242c1.09.301 2.246.464 3.442.464 6.627 0 12-4.974 12-11.111 0-6.136-5.373-11.111-12-11.111zm1.193 14.963l-3.056-3.259-5.963 3.259 6.559-6.963 3.13 3.259 5.889-3.259-6.559 6.963z"></path></svg><span class="DefaultButton__DefaultButtonText-sc-1v663dx-1 ecYRLg">Start Chat</span></a><div style="display: flex; justify-content: center; align-items: center;"><a href="https://elfsight.com/facebook-chat-widget/?utm_source=websites&amp;utm_medium=clients&amp;utm_content=facebook-chat&amp;utm_term=profile-v1.surge.sh&amp;utm_campaign=free-widget" target="_blank" style="animation: 0s ease 0s 1 normal none running none; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2IDUuOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNiA1Ljg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiM4MDgwODA7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGlkPSJlbGZzaWdodC1nbHlwaC0xMjAwLWEiIGNsYXNzPSJzdDAiIGQ9Ik0zLjIsMEM0LjgsMCw2LjEsMS40LDYsM2MwLDEuNi0xLjQsMi44LTMsMi44cy0yLjgtMS40LTIuOC0zYzAtMC4xLDAtMC4xLDAtMC4yDQoJCWMwLDAsMC4xLTAuMywwLjMtMC4zczAuMywwLjIsMC4zLDAuM3YwLjF2MC4xYzAsMS4zLDEsMi40LDIuMiwyLjRjMS4zLDAsMi40LTEsMi40LTIuMmMwLTEuMy0xLTIuNC0yLjItMi40Yy0wLjEsMC0wLjMsMC0wLjQsMA0KCQlsMCwwYzAsMC0wLjMsMC0wLjQtMC4yUzIuNSwwLDIuNiwwQzIuOCwwLDMsMCwzLjIsMHogTTAuMSwwLjJDMC4yLDAuMiwwLjIsMC4yLDAuMSwwLjJMMC4xLDAuMkwwLjEsMC4ybDMuMSwxLjZsMCwwbDAsMGwwLDBsMCwwDQoJCUMzLjYsMiwzLjcsMi4yLDMuNywyLjVsMCwwbDAsMGwwLDBsMCwwdjAuOWMwLDAuMiwwLDAuMywwLDAuNGwwLDBsMCwwYzAsMC4xLDAsMC4yLTAuMSwwLjJjMCwwLDAsMC0wLjEsMGwwLDBsMCwwTDIuOCwzLjZsMCwwDQoJCUMyLjUsMy40LDIuNCwzLjIsMi40LDIuOWwwLDBjMC0wLjIsMC0wLjUtMC40LTAuOEMxLjMsMS42LDAuMiwwLjYsMCwwLjVsMCwwbDAsMGwwLDBsMCwwVjAuNEMwLDAuMywwLjEsMC4yLDAuMSwwLjJ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==&quot;) 8px center / 16px 16px no-repeat rgba(238, 238, 238, 0.9); border: none; inset: auto auto auto 0px; color: rgba(0, 0, 0, 0.5); display: inline-block; float: none; height: 28px; margin: 8px 0px; opacity: 1; padding: 6px 6px 6px 32px; position: relative; transform: none; zoom: 1; visibility: visible; box-sizing: border-box; border-radius: 6px; font-family: Roboto, Arial, sans-serif; font-size: 12px; font-weight: 700; line-height: 16px; text-align: left; text-decoration: none; text-indent: 0px; z-index: 99999;">Free Facebook Chat widget<div style="align-items: center; justify-content: center; border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px; width: 20px; height: 20px; overflow: hidden; position: absolute; right: -10px; top: -10px; background: rgb(249, 50, 98); display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 10 10" style="display: block; pointer-events: none;"><path fill="#ffffff" d="M6.01 5l3.78 3.78a.714.714 0 1 1-1.01 1.01L5 6.01 1.22 9.79A.714.714 0 1 1 .21 8.78L3.99 5 .21 1.22A.714.714 0 0 1 1.22.21L5 3.99 8.78.21a.714.714 0 0 1 1.01 1.01L6.01 5z"></path></svg></div></a></div></div><div role="button" tabindex="0" type="bubble" class="Bubble__BubbleComponent-sc-13azvyr-3 hmAlzH"><div class="Bubble__NotificationBadge-sc-13azvyr-2 eiAeRi"></div><div class="Icon__Component-sc-19xn1fe-0 cvFBbC Bubble__StyledIcon-sc-13azvyr-1 fOpOe" color="rgb(0, 132, 255)" height="32" width="32"><svg viewBox="0 0 32 32" fill="#0084ff"><path d="M16.942 19.26l-2.957-3.153a.889.889 0 0 0-1.074-.172l-6.856 3.747a.089.089 0 0 1-.107-.139l7.72-8.196a.889.889 0 0 1 1.289-.006l3.052 3.178c.28.29.72.357 1.072.162l6.754-3.739a.089.089 0 0 1 .108.139l-7.705 8.181a.889.889 0 0 1-1.296-.001zM16 0C7.164 0 0 6.633 0 14.815c0 4.662 2.327 8.821 5.963 11.536v4.147a.889.889 0 0 0 1.316.78l4.132-2.267a17.2 17.2 0 0 0 4.589.62c8.836 0 16-6.634 16-14.815C32 6.632 24.836 0 16 0z"></path></svg></div><div class="Bubble__BubbleText-sc-13azvyr-0 fhTGMF"></div></div></div></div></div></body>
+</html>
