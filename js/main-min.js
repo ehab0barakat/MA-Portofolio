@@ -3,8 +3,8 @@
 var name = 0 ; 
 var myName = document.querySelector(".fEWHYW") ;
 while ( name == 0 ){
-    console.log(myName.innerHTML)
-    if (myName.innerHTML != "Ehab Barakat"){
+    console.log("ehab")
+    if (myName){
         myName.innerHTML = "Ehab Barakat"
         name = 1
     }
