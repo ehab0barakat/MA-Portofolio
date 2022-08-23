@@ -3,7 +3,8 @@
 var name = true ; 
 var myName = document.querySelector(".fEWHYW") ;
 while ( name == true ){
-    if (myName){
+    
+    if (myName.innerHTML != "Ehab Barakat"){
         myName.innerHTML = "Ehab Barakat"
         name = false
     }
