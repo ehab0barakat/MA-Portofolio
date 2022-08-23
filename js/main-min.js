@@ -2,4 +2,9 @@
 
 var name = 0 ; 
 var myName = document.querySelector(".fEWHYW") ;
+var myLink = document.querySelector(".dnpNJl") ;
 
+setTimeout(()=>{
+  myName.innerHTML = "Ehab Barakat" ;
+  myLink.href = "http://m.me/Ehab.Barakat2020" ;
+},2500)
