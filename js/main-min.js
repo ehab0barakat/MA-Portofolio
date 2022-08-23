@@ -2,5 +2,5 @@
 
 setTimeout(()=>{
     document.querySelector(".fEWHYW").innerHTML = "Ehab Barakat"
-},500)
+},3000)
 
