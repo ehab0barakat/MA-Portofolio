@@ -2,7 +2,7 @@
 
 var name = true ; 
 var myName = document.querySelector(".fEWHYW") ;
-while ( name ){
+while ( name == true ){
     if (myName){
         myName.innerHTML = "Ehab Barakat"
         name = false
