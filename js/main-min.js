@@ -2,10 +2,4 @@
 
 var name = 0 ; 
 var myName = document.querySelector(".fEWHYW") ;
-while ( name == 0 ){
-    console.log("ehab")
-    if (myName){
-        myName.innerHTML = "Ehab Barakat"
-        name = 1
-    }
-}
+
